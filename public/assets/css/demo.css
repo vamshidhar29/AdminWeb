@@ -1,0 +1,272 @@
+/*
+* demo.css
+* File include item demo only specific css only
+******************************************************************************/
+
+.apexcharts-legend {	
+  display: flex;	
+  overflow: auto;	
+  padding: 0 10px;	
+}	
+.apexcharts-legend.apx-legend-position-bottom, .apexcharts-legend.apx-legend-position-top {	
+  flex-wrap: wrap	
+}	
+.apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {	
+  flex-direction: column;	
+  bottom: 0;	
+}	
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-left, .apexcharts-legend.apx-legend-position-top.apexcharts-align-left, .apexcharts-legend.apx-legend-position-right, .apexcharts-legend.apx-legend-position-left {	
+  justify-content: flex-start;	
+}	
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {	
+  justify-content: center;  	
+}	
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-right, .apexcharts-legend.apx-legend-position-top.apexcharts-align-right {	
+  justify-content: flex-end;	
+}	
+.apexcharts-legend-series {	
+  cursor: pointer;	
+  line-height: normal;	
+}	
+.apexcharts-legend.apx-legend-position-bottom .apexcharts-legend-series, .apexcharts-legend.apx-legend-position-top .apexcharts-legend-series{	
+  display: flex;	
+  align-items: center;	
+}	
+.apexcharts-legend-text {	
+  position: relative;	
+  font-size: 14px;	
+}	
+.apexcharts-legend-text *, .apexcharts-legend-marker * {	
+  pointer-events: none;	
+}	
+.apexcharts-legend-marker {	
+  position: relative;	
+  display: inline-block;	
+  cursor: pointer;	
+  margin-right: 3px;	
+  border-style: solid;
+}	
+  
+.apexcharts-legend.apexcharts-align-right .apexcharts-legend-series, .apexcharts-legend.apexcharts-align-left .apexcharts-legend-series{	
+  display: inline-block;	
+}	
+.apexcharts-legend-series.apexcharts-no-click {	
+  cursor: auto;	
+}	
+.apexcharts-legend .apexcharts-hidden-zero-series, .apexcharts-legend .apexcharts-hidden-null-series {	
+  display: none !important;	
+}	
+.apexcharts-inactive-legend {	
+  opacity: 0.45;	
+}
+
+.menu .app-brand.demo {
+  height: 64px;
+  margin-top: 12px;
+}
+
+.app-brand-logo.demo svg {
+  width: 22px;
+  height: 38px;
+}
+
+.app-brand-text.demo {
+  font-size: 1.75rem;
+  letter-spacing: -0.5px;
+}
+
+/* ! For .layout-navbar-fixed added fix padding top to .layout-page */
+/* Detached navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-horizontal):not(.layout-without-menu) .layout-page {
+  padding-top: 76px !important;
+}
+/* Default navbar */
+.layout-navbar-fixed .layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 64px !important;
+}
+.docs-page .layout-navbar-fixed.layout-wrapper:not(.layout-without-menu) .layout-page,
+.docs-page .layout-menu-fixed.layout-wrapper:not(.layout-without-menu) .layout-page {
+  padding-top: 62px !important;
+}
+
+/* Navbar page z-index issue solution */
+.content-wrapper .navbar {
+  z-index: auto;
+}
+
+/*
+* Content
+******************************************************************************/
+
+.demo-blocks > * {
+  display: block !important;
+}
+
+.demo-inline-spacing > * {
+  margin: 1rem 0.375rem 0 0 !important;
+}
+
+/* ? .demo-vertical-spacing class is used to have vertical margins between elements. To remove margin-top from the first-child, use .demo-only-element class with .demo-vertical-spacing class. For example, we have used this class in forms-input-groups.html file. */
+.demo-vertical-spacing > * {
+  margin-top: 1rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-lg > * {
+  margin-top: 1.875rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-lg.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.demo-vertical-spacing-xl > * {
+  margin-top: 5rem !important;
+  margin-bottom: 0 !important;
+}
+.demo-vertical-spacing-xl.demo-only-element > :first-child {
+  margin-top: 0 !important;
+}
+
+.rtl-only {
+  display: none !important;
+  text-align: left !important;
+  direction: ltr !important;
+}
+
+[dir='rtl'] .rtl-only {
+  display: block !important;
+}
+
+/*
+* Layout demo
+******************************************************************************/
+
+.layout-demo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.layout-demo-placeholder img {
+  width: 900px;
+}
+.layout-demo-info {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+
+.ttm-team-member-single-title {
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.ttm-featured-wrapper {
+    margin-left: 60px;
+}
+
+.featured-thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.ttm-team-member-single-content-area .ttm-team-member-content {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: -30px;
+    padding: 46px 25px 40px 40px;
+}
+
+.ttm-team-member-single-content,
+.ttm-team-member-single-list {
+    position: relative;
+    margin: 0;
+}
+
+.ttm-featured-wrapper {
+    margin-left: 60px;
+}
+
+.col-lg-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+}
+
+.ttm-team-member-content {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: -30px;
+    padding: 46px 25px 40px 60px;
+}
+
+.ttm-team-member-single-position {
+    font-size: 15px;
+    color: #6e6e6e;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.ttm-team-member-appointment-btn-wrapper {
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+
+.ttm-team-member-single-content-wrapper .ttm-team-data {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 35px;
+    margin-top: 25px;
+}
+.ttm-team-member-single-content-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.ttm-btn.ttm-btn-shape-square {
+    border-radius: 0;
+}
+
+.ttm-btn-color-skincolor {
+    color: #01d6a3;
+}
+
+.ttm-team-data {
+    border-top: 1px solid #f2f2f2;
+    padding-top: 35px;
+    margin-top: 25px;
+}
+
+.ttm-team-list-title i {
+    position: absolute;
+    left: -4px;
+    text-align: center;
+    display: block;
+    text-indent: 0;
+    font-size: 16px;
+    top: 0;
+    color: var(--skin-color);
+}
+
+.ttm-team-details-list .ttm-team-list-title, .ttm-team-details-list .ttm-team-list-value {
+    display: inline-block;
+}
